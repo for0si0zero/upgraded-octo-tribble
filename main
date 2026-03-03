@@ -440,7 +440,7 @@ function Library:MakeWindow(WindowConfig)
 	local UIHidden = false
 
 	WindowConfig = WindowConfig or {}
-	WindowConfig.Name = WindowConfig.Name or "404"
+	WindowConfig.Name = WindowConfig.Name or "AL-FIDJAR"
 	WindowConfig.ConfigFolder = WindowConfig.ConfigFolder or WindowConfig.Name
 	WindowConfig.SaveConfig = WindowConfig.SaveConfig or false
 	WindowConfig.HidePremium = WindowConfig.HidePremium or false
@@ -448,7 +448,7 @@ function Library:MakeWindow(WindowConfig)
 		WindowConfig.IntroEnabled = true
 	end
 	WindowConfig.IntroToggleIcon = WindowConfig.IntroToggleIcon or "rbxassetid://103825297687396"
-	WindowConfig.IntroText = WindowConfig.IntroText or "404: scripts & services"
+	WindowConfig.IntroText = WindowConfig.IntroText or "AL-FIDJAR"
 	WindowConfig.CloseCallback = WindowConfig.CloseCallback or function() end
 	WindowConfig.ShowIcon = WindowConfig.ShowIcon or false
 	WindowConfig.Icon = WindowConfig.Icon or "rbxassetid://103825297687396"
@@ -550,7 +550,7 @@ AddThemeObject(SetProps(MakeElement("Label", LocalPlayer.Name, WindowConfig.Hide
     Font = Enum.Font.GothamBold,
     ClipsDescendants = true
 }), "Text"),
-			AddThemeObject(SetProps(MakeElement("Label", "404 services", 12), {
+			AddThemeObject(SetProps(MakeElement("Label", "AL-FIDJAR", 12), {
 				Size = UDim2.new(1, -60, 0, 12),
 				Position = UDim2.new(0, 50, 1, -25),
 				Visible = not WindowConfig.HidePremium
